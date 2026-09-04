@@ -102,7 +102,7 @@ function InfoList() {
 
 function JoinButton() {
   return (
-    <div className="px-4 pt-6">
+    <div className="mt-auto px-4 pt-8">
       <a
         href={TELEGRAM_LINK}
         target="_blank"
@@ -120,7 +120,7 @@ function JoinButton() {
 
 function FinePrint() {
   return (
-    <footer className="mt-auto px-6 pb-7 pt-8 text-center">
+    <footer className="px-6 pb-7 pt-5 text-center">
       <p className="text-[11px] leading-relaxed text-muted">
         Trading XAUUSD involves substantial risk of loss. Signals are
         educational and not financial advice.
