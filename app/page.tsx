@@ -8,7 +8,6 @@ export default function Home() {
         <AppBar />
         <ProfileHeader />
         <InfoList />
-        <JoinButton />
         <FinePrint />
       </PhoneFrame>
     </div>
@@ -55,6 +54,7 @@ function ProfileHeader() {
         Usman Price Action Lab
       </h1>
       <p className="mt-1 text-[15px] text-muted">10,000+ subscribers</p>
+      <JoinButton />
     </section>
   );
 }
@@ -102,7 +102,7 @@ function InfoList() {
 
 function JoinButton() {
   return (
-    <div className="mt-auto px-4 pt-8">
+    <div className="mt-6">
       <a
         href={TELEGRAM_LINK}
         target="_blank"
@@ -120,7 +120,7 @@ function JoinButton() {
 
 function FinePrint() {
   return (
-    <footer className="px-6 pb-7 pt-5 text-center">
+    <footer className="mt-auto px-6 pb-7 pt-8 text-center">
       <p className="text-[11px] leading-relaxed text-muted">
         Trading XAUUSD involves substantial risk of loss. Signals are
         educational and not financial advice.
