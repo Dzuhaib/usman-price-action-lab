@@ -70,8 +70,8 @@ function InfoList() {
           </svg>
           <div>
             <p className="text-[15px] leading-snug">
-              Daily free XAUUSD signals with proven accuracy. Expert account
-              management for serious traders.
+              Educational market analysis and XAUUSD trading insights. Learn
+              technical analysis and follow market updates.
             </p>
             <p className="mt-1 text-[13px] text-muted">Description</p>
           </div>
