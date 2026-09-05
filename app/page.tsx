@@ -1,3 +1,6 @@
+import Image from "next/image";
+import logoMark from "@/public/logo-mark.png";
+
 const TELEGRAM_LINK = "https://t.me/UsmanPriceActionLab";
 const TELEGRAM_HANDLE = "t.me/UsmanPriceActionLab";
 
@@ -47,9 +50,14 @@ function AppBar() {
 function ProfileHeader() {
   return (
     <section className="animate-fade-in-up border-b border-separator bg-card px-6 pb-7 pt-7 text-center">
-      <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-b from-accent-light to-accent text-2xl font-semibold tracking-wide text-white">
-        UPL
-      </div>
+      <Image
+        src={logoMark}
+        alt="Usman Price Action Lab"
+        width={96}
+        height={96}
+        priority
+        className="mx-auto mb-4 h-24 w-24 rounded-full border border-separator bg-card object-contain p-1.5"
+      />
       <h1 className="text-[22px] font-semibold leading-tight tracking-tight">
         Usman Price Action Lab
       </h1>
