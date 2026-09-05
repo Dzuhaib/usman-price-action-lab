@@ -56,7 +56,7 @@ function ProfileHeader() {
         width={96}
         height={96}
         priority
-        className="mx-auto mb-4 h-24 w-24 rounded-full border border-separator bg-card object-contain p-1.5"
+        className="mx-auto mb-4 h-24 w-24 rounded-full border border-accent-light/40 bg-card object-contain p-1.5"
       />
       <h1 className="text-[22px] font-semibold leading-tight tracking-tight">
         Usman Price Action Lab

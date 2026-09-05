@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Telegram light theme */
+  /* Telegram light theme, tinted to the logo's navy + green */
   --color-background: #efeff4;
-  --color-foreground: #000000;
+  --color-foreground: #16273a;
   --color-card: #ffffff;
-  --color-accent: #3390ec;
-  --color-accent-dark: #2b7cd3;
-  --color-accent-light: #6cc0ff;
+  /* The logo green as sampled (#499427) only reaches 3.8:1 on white, so the
+     interactive shades are darkened to clear AA for the link and button label. */
+  --color-accent: #3d8020;
+  --color-accent-dark: #2f6418;
+  --color-accent-light: #4a9a2a;
   --color-muted: #8e8e93;
   --color-separator: #c8c7cc;
   /* backdrop behind the phone frame on wide viewports */
-  --color-desk: #dce1e7;
+  --color-desk: #d9dee4;
 }
 
 body {
