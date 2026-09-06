@@ -1,8 +1,8 @@
 import Image from "next/image";
 import logoMark from "@/public/logo-mark.png";
 
-const TELEGRAM_LINK = "https://t.me/UsmanPriceActionLab";
-const TELEGRAM_HANDLE = "t.me/UsmanPriceActionLab";
+const TELEGRAM_LINK = "https://t.me/+LTh8SFMYHmEyMTZk";
+const TELEGRAM_HANDLE = "https://t.me/+LTh8SFMYHmEyMTZk";
 
 export default function Home() {
   return (
