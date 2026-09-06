@@ -11,6 +11,7 @@ export default function Home() {
         <AppBar />
         <ProfileHeader />
         <InfoList />
+        <ResultsGallery />
         <FinePrint />
       </PhoneFrame>
     </div>
@@ -103,6 +104,55 @@ function InfoList() {
             <path d="m9 18 6-6-6-6" />
           </svg>
         </a>
+      </div>
+    </section>
+  );
+}
+
+const RESULT_IMAGES = [
+  {
+    src: "/results/WhatsApp Image 2026-09-06 at 8.58.46 PM (1).jpeg",
+    alt: "Trading result shared by the Usman Price Action Lab community",
+  },
+  {
+    src: "/results/WhatsApp Image 2026-09-06 at 8.58.46 PM.jpeg",
+    alt: "XAUUSD trading result shared by the Usman Price Action Lab community",
+  },
+  {
+    src: "/results/WhatsApp Image 2026-09-06 at 8.58.47 PM.jpeg",
+    alt: "Trading performance result shared by the Usman Price Action Lab community",
+  },
+  {
+    src: "/results/WhatsApp Image 2026-09-06 at 8.59.12 PM.jpeg",
+    alt: "Latest trading result shared by the Usman Price Action Lab community",
+  },
+] as const;
+
+function ResultsGallery() {
+  return (
+    <section className="px-4 pt-6" aria-labelledby="results-heading">
+      <h2 id="results-heading" className="px-3 pb-2 text-[13px] uppercase tracking-wide text-muted">
+        Results
+      </h2>
+      <div className="grid grid-cols-2 gap-2">
+        {RESULT_IMAGES.map((image) => (
+          <a
+            key={image.src}
+            href={image.src}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group overflow-hidden rounded-xl bg-card shadow-sm"
+          >
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={814}
+              height={1280}
+              className="h-auto w-full object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+              sizes="(min-width: 640px) 175px, 45vw"
+            />
+          </a>
+        ))}
       </div>
     </section>
   );
